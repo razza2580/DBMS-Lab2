@@ -1,0 +1,12 @@
+create database Razza ;
+create table employee( eid int, ename char(30) , job char (30), salary int); 
+insert into employee values( 1,'Razza','Programmer',2000000)
+insert into employee values( 1,'Raja','Nothing',20000),( 1,'Raja','Nothing',20000)
+update employee SET salary = 25000 where job= 'Programmer'
+SELECT * FROM employee;
+SELECT ename , job FROM employee;
+DELETE from employee WHERE job ="Nothing"
+select* from employee WHERE job= 'Programmer'
+select DISTINCT job FROM employee
+SELECT ename , job from employee where salary >=25000
+
